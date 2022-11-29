@@ -77,3 +77,11 @@ Nest is [MIT licensed](LICENSE).
 - [JWT](https://qiita.com/knaot0/items/8427918564400968bd2b)
 - [Prisma](https://www.prisma.io/)
   - [ORM](https://utouto97.hatenablog.com/entry/2021/07/21/224759)
+- [CSRF](https://www.shadan-kun.com/blog/measure/2640/)
+- dto:Data Transfer Object(client→server で送られるデータ)
+- [curl](https://qiita.com/yasuhiroki/items/a569d3371a66e365316f)
+
+## Memo
+
+- なんか変更したのに反映されんとき →`yarn build`
+- nest のレスポンス → 全部 201(create)になってしまう
