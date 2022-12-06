@@ -16,7 +16,7 @@ async function bootstrap() {
     credentials: true,
     origin: [
       'http://localhost:3000',
-      'https://study-nestjs-frontend.vercel.app/',
+      'https://study-nestjs-frontend.vercel.app',
     ],
   });
   // middlewareでcookieの解析を有効化
