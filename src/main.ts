@@ -14,7 +14,10 @@ async function bootstrap() {
   app.enableCors({
     // cookieベースでの通信を有効化
     credentials: true,
-    origin: ['http://localhost:3000'],
+    origin: [
+      'http://localhost:3000',
+      'https://study-nestjs-frontend.vercel.app/',
+    ],
   });
   // middlewareでcookieの解析を有効化
   app.use(cookieParser());
