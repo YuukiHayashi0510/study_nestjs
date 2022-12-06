@@ -18,6 +18,18 @@ async function bootstrap() {
   });
   // middlewareでcookieの解析を有効化
   app.use(cookieParser());
-  await app.listen(3005);
+  app.use(
+    csurf({
+      cookie: {
+        httpOnly: true,
+        sameSite: 'none',
+        secure: true,
+      },
+      value: (req: Request) => {
+        return req.header('csrf-token');
+      },
+    }),
+  );
+  await app.listen(process.env.port || 3005);
 }
 bootstrap();
